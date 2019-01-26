@@ -1,7 +1,7 @@
 {
   "name": "snippet-express-server",
   "version": "1.0.0",
-  "description": "Example how to set up an express server and test it with supertest and chai-http.",
+  "description": "Example how to set up an express server with a router in a separate file.",
   "main": "server.js",
   "scripts": {
     "test": "mocha tests/test-*.js",
