@@ -1,0 +1,29 @@
+{
+  "name": "test-chai-match",
+  "version": "1.0.0",
+  "description": "Example on how to test strings with regular expressions.",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha tests/test-*.js",
+    "start": ""
+  },
+  "keywords": [
+    "snippet",
+    "regex",
+    "test",
+    "mocha",
+    "chai",
+    "chai-match"
+  ],
+  "author": "Frederik S. Held (kontakt@frederikheld,de)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "chai-match": "^1.1.1",
+    "mocha": "^5.2.0"
+  }
+}
