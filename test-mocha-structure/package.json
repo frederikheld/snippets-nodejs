@@ -1,0 +1,24 @@
+{
+  "name": "test-mocha-structure",
+  "version": "1.0.0",
+  "description": "Examples on how to structure a mocha test suite.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/**/test-*.js",
+    "dev": "mocha --watch tests/**/test-*.js"
+  },
+  "keywords": [
+    "test",
+    "mocha",
+    "snippet"
+  ],
+  "author": "Frederik S. Held (kontakt@frederikheld.de)",
+  "license": "MIT",
+  "devDependencies": {
+    "chai-match": "^1.1.1",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
+  }
+}
