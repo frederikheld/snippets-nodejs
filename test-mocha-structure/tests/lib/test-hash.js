@@ -15,7 +15,7 @@ describe('hash()', () => {
 
         let token
 
-        it('should return a token', () => {
+        it('returns a token', () => {
 
             token = hash()
             should.exist(token)
@@ -24,11 +24,11 @@ describe('hash()', () => {
 
         describe('the returned token', () => {
 
-            it('should be exactly 20 characters long', () => {
+            it('is exactly 20 characters long', () => {
                 token.length.should.equal(20)
             })
 
-            it('should consist only of [a-zA-Z0-9]', () => {
+            it('consists only of [a-zA-Z0-9]', () => {
                 token.should.match(/^[a-zA-Z0-9]*$/gm)
 
                 // NOTE: I'm not using ^[a-zA-Z0-9]{20}$ here since the length is already
@@ -37,6 +37,7 @@ describe('hash()', () => {
                 //       more difficult to update the tests if the length should change.
                 //       Testing both together would make it more difficult to spot what's
                 //       wrong if the test fails.
+
             })
 
         })
@@ -47,7 +48,7 @@ describe('hash()', () => {
 
         describe('the returned token', () => {
 
-            it('should be exactly n characters long', () => {
+            it('is exactly n characters long', () => {
 
                 let token = hash(10)
                 token.length.should.equal(10)
@@ -61,7 +62,7 @@ describe('hash()', () => {
 
     })
 
-    it('should return a different token every time it is called', () => {
+    it('returns a different token every time it is called', () => {
 
         // create sample tokens:
         let tokens = []
