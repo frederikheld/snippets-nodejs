@@ -5,20 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha tests/**/test-*.js",
-    "dev": "mocha --watch tests/**/test-*.js"
+    "dev": "mocha --watch tests/**/test-*.js",
+    "coverage": "nyc npm test"
   },
   "keywords": [
     "test",
     "mocha",
+    "istanbul",
+    "coverage",
+    "refactoring",
     "snippet"
   ],
   "author": "Frederik S. Held (kontakt@frederikheld.de)",
   "license": "MIT",
   "devDependencies": {
     "chai-match": "^1.1.1",
-    "mocha": "^5.2.0"
-  },
-  "dependencies": {
+    "mocha": "^5.2.0",
+    "nyc": "^13.2.0",
     "chai": "^4.2.0"
   }
 }
