@@ -63,7 +63,7 @@ describe('hash()', () => {
 
     it('should return a different token every time it is called', () => {
 
-        // create tokens:
+        // create sample tokens:
         let tokens = []
         for (let i = 0; i < 10; i++) {
             tokens.push(hash())
@@ -73,6 +73,12 @@ describe('hash()', () => {
         tokens.forEach((item, index) => {
             tokens.lastIndexOf(item).should.equal(index)
         })
+
+        // NOTE: This test could theoretically fail, since the
+        // tokens are generated independently and therefore
+        // not checked against a database of already generated
+        // tokens. The mathematical probability for this event
+        // is really low though!
 
     })
 
